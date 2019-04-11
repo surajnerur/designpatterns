@@ -17,8 +17,11 @@ public class GenerateBill {
 	     int units=Integer.parseInt(br.readLine());  	
 
 	      Plan plan = getPlanFactory.getPlanType(planName);
-	      
-	      plan.calculateBill(units);
+	      System.out.print("Bill amount for "+planName+" of  "+units+" units is: ");  
+          plan.getRate();  // getRate() and calculateBill can be put together into another method or getRate() can be called from calculateBill() method for facade pattern 
+          plan.calculateBill(units);  
+           //}
+	      //plan.calculateBill(units);
 	}
 
 }

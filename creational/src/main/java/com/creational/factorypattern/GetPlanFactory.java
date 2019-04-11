@@ -10,7 +10,7 @@ public class GetPlanFactory {
 			return new DomesticPlann();
 		}
 		
-		if("Commerical".equals(planName)){
+		if("Commercial".equals(planName)){
 			return new CommercialPlan();
 		}
 		

@@ -6,6 +6,7 @@ public abstract class Plan {
 	abstract void getRate();
 	
 	public void calculateBill(int units){
+		//rate = this.getRate();
 		System.out.println(units*rate);
 	}
 }
